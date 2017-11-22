@@ -9,6 +9,10 @@ p {
   font-size: 24px;
 }
 
+a {
+    font-size: 24px;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: 'Lobster', cursive;
 }
@@ -17,7 +21,6 @@ h2 {
   font-size: 50px;
   color: #000000;
   text-shadow: 1px 1px 10px rgba(253, 255, 252, 0.2);
-  margin
 }
 
 header {
@@ -75,7 +78,6 @@ header img {
 
 .section {
   width: 100%;
-  min-height: 400px;
   background-color: #ffffff;
   position: relative;
 }
@@ -83,7 +85,7 @@ header img {
 .container {
   max-width: 1310px;
   margin: 0 auto;
-  padding: 50px 25px;
+  padding: 100px 25px;
 }
 
 .section.hero {
@@ -114,58 +116,58 @@ header img {
   z-index: 1;
 }
 
-.section.hero .clouds {
-  animation: 15s loop infinite linear;
+.section.hero .top-clouds,
+.section.hero .bottom-clouds {
+    animation: 20s loop infinite linear;
 }
 
 @keyframes loop {
   from {
-    transform: translateX(-100%);
+    transform: translateX(-175%);
   }
   to {
-    transform: translateX(100%);
+    transform: translateX(175%);
   }
 }
 
-.section.hero .clouds .cloud {
+.section.hero .top-clouds .cloud,
+.section.hero .bottom-clouds .cloud {
   position: absolute;
-  height: 50px;
   z-index: 0;
 }
 
-.section.hero .clouds .cloud:nth-child(1) {
-  top: 20%;
-  left: 25%;
-  width: 200px;
-  height: 100px;
+.section.hero .top-clouds .cloud {
+  top: 25%;
+  width: 15%;
 }
 
-.section.hero .clouds .cloud:nth-child(2) {
-  top: 20%;
+.section.hero .top-clouds .cloud:nth-child(1) {
   left: 5%;
-  width: 275px;
-  height: 125px;
 }
 
-.section.hero .clouds .cloud:nth-child(3) {
-  top: 20%;
-  left: 50%;
-  width: 350px;
-  height: 175px;
+.section.hero .top-clouds .cloud:nth-child(2) {
+  left: 75%;
 }
 
-.section.hero .clouds .cloud:nth-child(4) {
-  top: 20%;
-  left: 70%;
-  width: 100px;
-  height: 50px;
+.section.hero .bottom-clouds .cloud {
+    top: 45%;
+    width: 35%;
 }
 
-.section.hero .clouds .cloud:nth-child(5) {
-  top: 20%;
-  right: 5%;
-  width: 300px;
-  height: 150px;
+.section.hero .bottom-clouds .cloud:nth-child(1) {
+  left: -50%;
+}
+
+.section.hero .bottom-clouds .cloud:nth-child(2) {
+  left: 25%;
+}
+
+.section.hero .bottom-clouds .cloud:nth-child(3) {
+  left: 90%;
+}
+
+.heading-column {
+    margin-bottom: 50px;
 }
 
 /*General Styles*/
