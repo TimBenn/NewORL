@@ -1,19 +1,23 @@
-var scrollpos = window.scrollY;
+import initMap from './map'
+
+
+
+  var scrollpos = window.scrollY;
   var header = document.getElementById('header');
   console.log(header)
-  function add_class_on_scroll() {
+  function addClassOnScroll() {
       header.classList.add('shrunk');
   }
-  function remove_class_on_scroll() {
+  function RemoveClassOnScroll() {
       header.classList.remove('shrunk');
   }
 
 window.addEventListener('scroll', function(){
       scrollpos = window.scrollY;
       if(scrollpos > 0){
-          add_class_on_scroll();
+          addClassOnScroll();
       }
       else {
-          remove_class_on_scroll();
+          RemoveClassOnScroll();
       }
   });
