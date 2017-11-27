@@ -1,9 +1,12 @@
+
 body {
-  background-color: #000000;
+  background-color: #ffffff;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
 }
+
+/*TYPOGRAPGHY*/
 
 p {
   font-size: 24px;
@@ -23,9 +26,13 @@ h2 {
   text-shadow: 1px 1px 10px rgba(253, 255, 252, 0.2);
 }
 
+/*END TYPOGRAPGHY*/
+
+/*HEADER STYLES*/
+
 header {
   width: 100%;
-  background-color: #DF2935;
+  background-color: #E63B35;
   padding: 15px 0;
   position: fixed;
   -webkit-transition: all 0.4s ease-in-out;
@@ -39,7 +46,7 @@ header {
 }
 
 header.shrunk {
-  padding: 5px 0px;
+  padding: 10px 0px;
 }
 
 header .hamburger {
@@ -66,8 +73,8 @@ header .logo h1 {
 
 header .hamburger .line {
   background-color: #ffffff;
-  width: 80%;
-  height: 5px;
+  width: 75%;
+  height: 3px;
   margin: 5px auto;
   border-radius: 2px;
 }
@@ -76,10 +83,19 @@ header img {
   height: 30px;
 }
 
+/*END HEADER STYLES*/
+
+/*CONTAINER STYLES*/
+
 .section {
   width: 100%;
   background-color: #ffffff;
   position: relative;
+}
+
+.section .row {
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .container {
@@ -88,24 +104,25 @@ header img {
   padding: 100px 25px;
 }
 
+/*END CONTAINER STYLES*/
+
+/*HERO STYLES*/
+
 .section.hero {
   background: #4edef5;
-  /* Old browsers */
   background: -moz-linear-gradient(top, #4edef5 0%, #82ebfc 100%);
-  /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #4edef5 0%, #82ebfc 100%);
-  /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #4edef5 0%, #82ebfc 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4edef5', endColorstr='#82ebfc', GradientType=0);
-  /* IE6-9 */
   height: 75vh;
   overflow: hidden;
+  position: relative;
 }
 
 .section.hero .container {
   padding-top: 200px;
   padding-bottom: 50px;
+
 }
 
 .section.hero h2 {
@@ -118,16 +135,8 @@ header img {
 
 .section.hero .top-clouds,
 .section.hero .bottom-clouds {
+    position: relative;
     animation: 20s loop infinite linear;
-}
-
-@keyframes loop {
-  from {
-    transform: translateX(-175%);
-  }
-  to {
-    transform: translateX(175%);
-  }
 }
 
 .section.hero .top-clouds .cloud,
@@ -137,8 +146,8 @@ header img {
 }
 
 .section.hero .top-clouds .cloud {
-  top: 25%;
-  width: 15%;
+  top: -100px;
+  width: 10%;
 }
 
 .section.hero .top-clouds .cloud:nth-child(1) {
@@ -150,8 +159,8 @@ header img {
 }
 
 .section.hero .bottom-clouds .cloud {
-    top: 45%;
-    width: 35%;
+    top: -50px;
+    width: 25%;
 }
 
 .section.hero .bottom-clouds .cloud:nth-child(1) {
@@ -166,11 +175,38 @@ header img {
   left: 90%;
 }
 
-.heading-column {
-    margin-bottom: 50px;
+@keyframes loop {
+  from {
+    transform: translateX(-175%);
+  }
+  to {
+    transform: translateX(175%);
+  }
 }
 
-/*General Styles*/
+.santa {
+    position: absolute;
+    bottom: -125px;
+    right: 5%;
+    width: 600px;
+}
+
+/*END HERO STYLES*/
+
+.countdown h4 {
+    margin-bottom: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*MAP STYLES*/
+
+.map-container {
+    height: 300px;
+}
+
+/*END MAP STYLES*/
+
+/*GENERAL STYLES*/
 
 .centered-text {
   text-align: center;
@@ -179,4 +215,57 @@ header img {
 .compressed {
   max-width: 960px;
   margin: 0 auto;
+}
+
+.hide {
+    display: none
+}
+
+#waving-hand {
+    transform-origin: bottom left;
+    animation: 2s wave infinite linear;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+/*END GENERAL STYLES*/
+
+/*SOCIAL-SECTION*/
+
+.social-icons .social {
+    width: 150px;
+    height: 150px;
+    min-width: 150px;
+    line-height: 200px;
+    vertical-align: middle;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 15px 15px 32px rgba(0,0,0,0.5);
+    transition: 0.5s all ease-in-out;
+}
+
+.social-icons .social:hover {
+    box-shadow: none;
+}
+
+.social-icons img {
+    height: 50px;
+}
+
+.social-icons .facebook {
+    background-color: #3c5a9a;
+}
+
+.social-icons .twitter {
+    background-color: #1DA1F2;
 }
