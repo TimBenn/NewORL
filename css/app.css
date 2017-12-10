@@ -228,9 +228,9 @@ header img {
 
 .santa {
   position: absolute;
-  bottom: -125px;
+  bottom: -75px;
   right: 5%;
-  width: 600px;
+  width: 400px;
 }
 
 @media only screen 
@@ -239,13 +239,6 @@ and (orientation: landscape) {
   .santa {
     bottom: -100px;
     width: 350px;
-  }
-}
-
-@media only screen and (max-width: 1400px) {
-  .santa {
-    bottom: -100px;
-    width: 400px;
   }
 }
 
