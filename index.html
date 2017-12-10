@@ -14,37 +14,46 @@
 
 <body>
     <header id="header">
-        <div class="navigation">
-            <div class="hamburger">
-                <div class="top-line line"></div>
-                <div class="middle-line line"></div>
-                <div class="bottom-line line"></div>
-            </div>
-        </div>
         <div class="logo">
             <h1>Old Richmond Light Show</h1>
         </div>
     </header>
+    <canvas id="snow" class="snow"></canvas>
     <div class="hero section">
         <div class="container">
             <div class="content">
                 <div class="top-clouds">
                     <div class="cloud">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925" transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="rgba(255,255,255,0.5)"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"
+                                transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="rgba(255,255,255,0.5)" />
+                        </svg>
                     </div>
                     <div class="cloud">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925" transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="rgba(255,255,255,0.5)"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"
+                                transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="rgba(255,255,255,0.5)" />
+                        </svg>
                     </div>
                 </div>
                 <div class="bottom-clouds">
                     <div class="cloud">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925" transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="rgba(255,255,255,0.5)"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"
+                                transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="rgba(255,255,255,0.5)" />
+                        </svg>
                     </div>
                     <div class="cloud">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925" transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="rgba(255,255,255,0.5)"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"
+                                transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="rgba(255,255,255,0.5)" />
+                        </svg>
                     </div>
                     <div class="cloud">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925" transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="rgba(255,255,255,0.5)"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path d="m391.84 540.91c-.421-.329-.949-.524-1.523-.524-1.351 0-2.451 1.084-2.485 2.435-1.395.526-2.388 1.88-2.388 3.466 0 1.874 1.385 3.423 3.182 3.667v.034h12.73v-.006c1.775-.104 3.182-1.584 3.182-3.395 0-1.747-1.309-3.186-2.994-3.379.007-.106.011-.214.011-.322 0-2.707-2.271-4.901-5.072-4.901-2.073 0-3.856 1.202-4.643 2.925"
+                                transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="rgba(255,255,255,0.5)" />
+                        </svg>
                     </div>
                 </div>
                 <div class="centered-text compressed">
@@ -53,105 +62,237 @@
             </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" class="santa" viewBox="0 0 152.7 125.5">
-        <style>
-            .st0{opacity:.15}
-            .st1,.st2,.st3{fill:#010101}
-            .st2,.st3{opacity:.11;enable-background:new}
-            .st3{opacity:.15}
-            .st4{fill:#f2c993}
-            .st5{fill:#414141}
-            .st6{fill:#e63b35}
-            .st7{fill:#812d1f}
-            .st8{fill:#eaad21}
-            .st9{fill:#d34737}
-            .st10{fill:#212121}
-            .st11{fill:#f9ce20}
-            .st12{fill:#fff}
-            .st13{fill:#ee9a9b}
-            .st14{fill:#f7caae}
-            .st15{opacity:.15;fill:#231f20;enable-background:new}
-            .st16{opacity:.11}
-        </style>
-        <path class="st4" d="M58.7 39h36.4v9.1H58.7V39z"/>
-        <g id="waving-hand">
-            <path class="st6" d="M76.1 67.9h30.8c9.2 0 16.8-7.5 16.8-16.8v-20h-13.3v20c0 1.9-1.5 3.4-3.4 3.4H76.2v13.4h-.1z"/>
-            <path class="st2" d="M76.1 67.9h30.8c9.2 0 16.8-7.5 16.8-16.8v-20h-13.3v20c0 1.9-1.5 3.4-3.4 3.4H76.2v13.4h-.1z"/>
-            <path class="st11" d="M116.7 30.1c0 1.4-1.1 2.5-2.5 2.5-4.2 0-7.6-3.4-7.6-7.6 0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5c0 1.5 1.2 2.6 2.7 2.6 1.3 0 2.4 1.1 2.4 2.5z"/>
-            <path class="st11" d="M124.5 29.6a6.7 6.7 0 0 1-13.4 0v-7.5a6.7 6.7 0 0 1 13.4 0v7.5z"/>
-            <path class="st12" d="M109.8 31.1c-1.1 0-2 .9-2 2v3.6c0 1.1.9 2 2 2h14.4c1.1 0 2-.9 2-2v-3.6c0-1.1-.9-2-2-2h-14.4z"/>
-        </g>
-        <circle class="st6" cx="79.3" cy="78.7" r="30.9"/>
-        <path class="st10" d="M44.9 78.7h66.3v10H44.9v-10z"/>
-        <path class="st11" d="M69.5 78.7h13.3v10H69.5v-10z"/>
-        <path class="st2" d="M90.6 50c8 5.6 13.3 14.9 13.3 25.4 0 17-13.8 30.9-30.9 30.9-4 0-7.8-.8-11.3-2.1 5 3.5 11 5.5 17.5 5.5 17 0 30.9-13.8 30.9-30.9 0-13.2-8.1-24.3-19.5-28.8z"/>
-        <path class="st13" d="M87.5 33.3c0 2.8 2.4 5.1 5.3 5.1s5.3-2.3 5.3-5.1-2.4-5.1-5.3-5.1c-3-.1-5.3 2.2-5.3 5.1zm-34.5 0c0 2.8 2.4 5.1 5.3 5.1s5.3-2.3 5.3-5.1-2.4-5.1-5.3-5.1c-2.9-.1-5.3 2.2-5.3 5.1z"/>
-        <path class="st12" d="M94.7 5.6c0 3.1 2.5 5.6 5.6 5.6s5.6-2.5 5.6-5.6-2.5-5.6-5.6-5.6-5.6 2.5-5.6 5.6z"/>
-        <path class="st14" d="M75.5 16.9c-10.4 0-18.7 8.4-18.7 18.7v18.7h37.5V35.6c0-10.3-8.4-18.7-18.8-18.7z"/>
-        <path class="st15" d="M73.7 37.9c-9.6 0-17.3 8.3-17.3 17.8 0 9.6 7.8 17.6 17.3 17.6 0 0 0 .1.1.1l.1-.4c19.6 0 35.4-15.5 35.4-35.1H73.7z"/>
-        <path class="st12" d="M70.4 34.7c-9.6 0-17.3 7.8-17.3 17.3 0 9.6 7.8 17.3 17.3 17.3h.2c19.6 0 35.4-15.5 35.4-34.7l-35.6.1z"/>
-        <ellipse class="st13" cx="75.5" cy="34.7" rx="5.2" ry="4.2"/>
-        <path class="st10" d="M71.8 40.3c0 2.1 1.7 3.7 3.7 3.7 2.1 0 3.7-1.7 3.7-3.7h-7.4z"/>
-        <path class="st6" d="M92.2 5.6h.2v22.5H56.8c0-12.4 15.8-22.5 35.4-22.5z"/>
-        <path class="st12" d="M56.2 16.9c-1.2 0-2.2 1-2.2 2.2v6.8c0 1.2 1 2.2 2.2 2.2h38.7c1.2 0 2.2-1 2.2-2.2v-6.8c0-1.2-1-2.2-2.2-2.2H56.2z"/>
-        <path class="st10" d="M83 30.9c0 .8.6 1.4 1.4 1.4s1.4-.6 1.4-1.4-.6-1.4-1.4-1.4c-.7 0-1.4.6-1.4 1.4zm-15 0c0 .8-.6 1.4-1.4 1.4s-1.4-.6-1.4-1.4.6-1.4 1.4-1.4 1.4.6 1.4 1.4z"/>
-    </svg>
+            <style>
+                .st0 {
+                    opacity: .15
+                }
+
+                .st1,
+                .st2,
+                .st3 {
+                    fill: #010101
+                }
+
+                .st2,
+                .st3 {
+                    opacity: .11;
+                    enable-background: new
+                }
+
+                .st3 {
+                    opacity: .15
+                }
+
+                .st4 {
+                    fill: #f2c993
+                }
+
+                .st5 {
+                    fill: #414141
+                }
+
+                .st6 {
+                    fill: #e63b35
+                }
+
+                .st7 {
+                    fill: #812d1f
+                }
+
+                .st8 {
+                    fill: #eaad21
+                }
+
+                .st9 {
+                    fill: #d34737
+                }
+
+                .st10 {
+                    fill: #212121
+                }
+
+                .st11 {
+                    fill: #f9ce20
+                }
+
+                .st12 {
+                    fill: #fff
+                }
+
+                .st13 {
+                    fill: #ee9a9b
+                }
+
+                .st14 {
+                    fill: #f7caae
+                }
+
+                .st15 {
+                    opacity: .15;
+                    fill: #231f20;
+                    enable-background: new
+                }
+
+                .st16 {
+                    opacity: .11
+                }
+            </style>
+            <path class="st4" d="M58.7 39h36.4v9.1H58.7V39z" />
+            <g id="waving-hand">
+                <path class="st6" d="M76.1 67.9h30.8c9.2 0 16.8-7.5 16.8-16.8v-20h-13.3v20c0 1.9-1.5 3.4-3.4 3.4H76.2v13.4h-.1z" />
+                <path class="st2" d="M76.1 67.9h30.8c9.2 0 16.8-7.5 16.8-16.8v-20h-13.3v20c0 1.9-1.5 3.4-3.4 3.4H76.2v13.4h-.1z" />
+                <path class="st11" d="M116.7 30.1c0 1.4-1.1 2.5-2.5 2.5-4.2 0-7.6-3.4-7.6-7.6 0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5c0 1.5 1.2 2.6 2.7 2.6 1.3 0 2.4 1.1 2.4 2.5z"
+                />
+                <path class="st11" d="M124.5 29.6a6.7 6.7 0 0 1-13.4 0v-7.5a6.7 6.7 0 0 1 13.4 0v7.5z" />
+                <path class="st12" d="M109.8 31.1c-1.1 0-2 .9-2 2v3.6c0 1.1.9 2 2 2h14.4c1.1 0 2-.9 2-2v-3.6c0-1.1-.9-2-2-2h-14.4z" />
+            </g>
+            <circle class="st6" cx="79.3" cy="78.7" r="30.9" />
+            <path class="st10" d="M44.9 78.7h66.3v10H44.9v-10z" />
+            <path class="st11" d="M69.5 78.7h13.3v10H69.5v-10z" />
+            <path class="st2" d="M90.6 50c8 5.6 13.3 14.9 13.3 25.4 0 17-13.8 30.9-30.9 30.9-4 0-7.8-.8-11.3-2.1 5 3.5 11 5.5 17.5 5.5 17 0 30.9-13.8 30.9-30.9 0-13.2-8.1-24.3-19.5-28.8z"
+            />
+            <path class="st13" d="M87.5 33.3c0 2.8 2.4 5.1 5.3 5.1s5.3-2.3 5.3-5.1-2.4-5.1-5.3-5.1c-3-.1-5.3 2.2-5.3 5.1zm-34.5 0c0 2.8 2.4 5.1 5.3 5.1s5.3-2.3 5.3-5.1-2.4-5.1-5.3-5.1c-2.9-.1-5.3 2.2-5.3 5.1z"
+            />
+            <path class="st12" d="M94.7 5.6c0 3.1 2.5 5.6 5.6 5.6s5.6-2.5 5.6-5.6-2.5-5.6-5.6-5.6-5.6 2.5-5.6 5.6z" />
+            <path class="st14" d="M75.5 16.9c-10.4 0-18.7 8.4-18.7 18.7v18.7h37.5V35.6c0-10.3-8.4-18.7-18.8-18.7z" />
+            <path class="st15" d="M73.7 37.9c-9.6 0-17.3 8.3-17.3 17.8 0 9.6 7.8 17.6 17.3 17.6 0 0 0 .1.1.1l.1-.4c19.6 0 35.4-15.5 35.4-35.1H73.7z"
+            />
+            <path class="st12" d="M70.4 34.7c-9.6 0-17.3 7.8-17.3 17.3 0 9.6 7.8 17.3 17.3 17.3h.2c19.6 0 35.4-15.5 35.4-34.7l-35.6.1z"
+            />
+            <ellipse class="st13" cx="75.5" cy="34.7" rx="5.2" ry="4.2" />
+            <path class="st10" d="M71.8 40.3c0 2.1 1.7 3.7 3.7 3.7 2.1 0 3.7-1.7 3.7-3.7h-7.4z" />
+            <path class="st6" d="M92.2 5.6h.2v22.5H56.8c0-12.4 15.8-22.5 35.4-22.5z" />
+            <path class="st12" d="M56.2 16.9c-1.2 0-2.2 1-2.2 2.2v6.8c0 1.2 1 2.2 2.2 2.2h38.7c1.2 0 2.2-1 2.2-2.2v-6.8c0-1.2-1-2.2-2.2-2.2H56.2z"
+            />
+            <path class="st10" d="M83 30.9c0 .8.6 1.4 1.4 1.4s1.4-.6 1.4-1.4-.6-1.4-1.4-1.4c-.7 0-1.4.6-1.4 1.4zm-15 0c0 .8-.6 1.4-1.4 1.4s-1.4-.6-1.4-1.4.6-1.4 1.4-1.4 1.4.6 1.4 1.4z"
+            />
+        </svg>
     </div>
-    <div class="section">
+    <div class="section early-break-section">
         <div class="container">
             <div class="row">
                 <div class="twelve columns centered-text heading-column">
                     <h2>What We're About!</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="twelve columns">
-                    <p><strong>Old Richmond Light Show</strong> was founded in 2008. We wanted to bring a little more light to your Christmas! Since we began we have had a large amount of viewers.</p>
+            <div class="row middle-aligned-row">
+                <div class="six columns">
+                    <p>
+                        <strong>Old Richmond Light Show</strong> was founded in 2008. We wanted to bring a little more light to your
+                        Christmas! Since we began we have had a large amount of viewers.</p>
                     <br>
                     <p>We love too see everyone turn out for our mixture of songs and synchronized lights!</p>
                 </div>
-            </div>
-            <div class="row">
-                <div class="twelve columns">
-                    <h3>Days Until Christmas!</h3>
-                </div>
-            </div>
-            <div class="row christmas-countdown countdown">
-                <div class="three columns centered-text">
-                    <h4 class="days"></h4>
-                </div>
-                <div class="three columns centered-text">
-                    <h4 class="hours"></h4>
-                </div>
-                <div class="three columns centered-text">
-                    <h4 class="minutes"></h4>
-                </div>
-                <div class="three columns centered-text">
-                    <h4 class="seconds"></h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="twelve columns">
-                    <h3>Days Until The Lights!</h3>
-                </div>
-            </div>
-            <div class="row lights-countdown countdown">
-                <div class="three columns centered-text">
-                    <h4 class="days"></h4>
-                </div>
-                <div class="three columns centered-text">
-                    <h4 class="hours"></h4>
-                </div>
-                <div class="three columns centered-text">
-                    <h4 class="minutes"></h4>
-                </div>
-                <div class="three columns centered-text">
-                    <h4 class="seconds"></h4>
+                <div class="six columns">
+                    <h4>Songs:</h4>
+                    <ol class="songs-list">
+                        <li>Decorations
+                            <br />
+                            <span class="small-artist-name">Bob Rivers</span>
+                        </li>
+
+                        <li>Jingle Bells
+                            <br />
+                            <span class="small-artist-name">Crazy Frogs</span>
+                        </li>
+
+                        <li>Christmas With A C
+                            <br />
+                            <span class="small-artist-name">Go Fish</span>
+                        </li>
+
+                        <li>Music Box Dancer
+                            <br />
+                            <span class="small-artist-name">Dj Schovede</span>
+                        </li>
+
+                        <li>Christmas Vacation
+                            <br />
+                            <span class="small-artist-name">Mavis Staples</span>
+                        </li>
+
+                        <li>Snoopy
+                            <br />
+                            <span class="small-artist-name">The Royal Guardsman</span>
+                        </li>
+
+                        <li>Rudolph
+                            <br />
+                            <span class="small-artist-name">Gene Autry</span>
+                        </li>
+
+                        <li>Taken Care of Christmas
+                            <br />
+                            <span class="small-artist-name">Randy Bach</span>
+                        </li>
+
+                        <li>Deck the Roof Top
+                            <br />
+                            <span class="small-artist-name">Glee cast</span>
+                        </li>
+
+                        <li>Joy to the World
+                            <br />
+                            <span class="small-artist-name">Go Fish</span>
+                        </li>
+
+                        <li>House on Christmas Street
+                            <br />
+                            <span class="small-artist-name">Judy Pancoast</span>
+                        </li>
+
+                        <li>Frosty
+                            <br />
+                            <span class="small-artist-name">Jimmy Durante</span>
+                        </li>
+                    </ol>
                 </div>
             </div>
         </div>
     </div>
-    </div>
     <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns">
+                    <h2>Days Until Christmas!</h2>
+                </div>
+            </div>
+            <div class="row christmas-countdown countdown">
+                <div class="three columns centered-text">
+                    <div class="days"></div>
+                </div>
+                <div class="three columns centered-text">
+                    <div class="hours"></div>
+                </div>
+                <div class="three columns centered-text">
+                    <div class="minutes"></div>
+                </div>
+                <div class="three columns centered-text">
+                    <div class="seconds"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <h2>Days Until The Lights!</h2>
+                </div>
+            </div>
+            <div class="row lights-countdown countdown">
+                <div class="three columns centered-text">
+                    <div class="days"></div>
+                </div>
+                <div class="three columns centered-text">
+                    <div class="hours"></div>
+                </div>
+                <div class="three columns centered-text">
+                    <div class="minutes"></div>
+                </div>
+                <div class="three columns centered-text">
+                    <div class="seconds"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section early-break-section">
         <div class="container">
             <div class="row">
                 <div class="twelve columns centered-text heading-column">
@@ -167,7 +308,7 @@
                     <h3>Our Email</h3>
                     <a href="mailto:info@oldrichmondlights.com">info@oldrichmondlights.com</a>
                 </div>
-                <div class="one-half column map-container">
+                <div id="map" class="one-half column">
 
                 </div>
             </div>
@@ -184,9 +325,11 @@
                     </a>
                 </div>
                 <div class="four columns">
-                    <div class="twitter social centered-text">
-                        <img src="./images/twitter-logo.svg" alt="">
-                    </div>
+                    <a href="https://twitter.com/RichmondLights" target="_blank">
+                        <div class="twitter social centered-text">
+                            <img src="./images/twitter-logo.svg" alt="">
+                        </div>
+                    </a>
                 </div>
                 <div class="four columns">
                     <a href="https://www.paypal.me/oldrichmondlights" target="_blank">
@@ -198,7 +341,11 @@
             </div>
         </div>
     </div>
-    <script src="./js/app.bundle.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuooL9iXmJCHcMJzsoBbCxePkCWGiRSoc"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.min.js"></script>
+    <script src="./js/map.js"></script>
+    <script src="./js/snow.js"></script>
 </body>
 
 </html>
