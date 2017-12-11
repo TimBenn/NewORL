@@ -32,7 +32,7 @@ var christmas = () => {
     seconds %= 60;
     if (timeDiff <= 0) {
         clearTimeout(christmasCountDown);
-        document.querySelector('.christmas-countdown .days').innerHTML = '<div class="twelve columuns centered-text"><h3>Christmas is here!</h3></div>';
+        document.querySelector('.christmas-countdown .days').innerHTML = '<div class="twelve columuns centered-text"><h3>Christmas is here!</h3></div><div class="twelve columuns centered-text"><h3>The show starts at 5:30 PM and ends at 11 :00 PM. Monday thru Sunday</h3></div>';
         document.querySelector('.christmas-countdown .three').classList.add('hide');
     } else {
         document.querySelector('.christmas-countdown .days').innerHTML = '<h3>' + days + '</h3> days ';
