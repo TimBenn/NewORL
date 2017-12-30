@@ -57,7 +57,7 @@ var lights = () => {
     seconds %= 60;
     if (timeDiff <= 0) {
         clearTimeout(lightsCountDown);
-        document.querySelector('.lights-countdown').innerHTML = '<div class="twelve columuns centered-text"><h3>The lights are on!</h3></div><div class="twelve columuns centered-text"><h3>The show starts at 5:30 PM and ends at 11 :00 PM. Everday</h3></div>';
+        document.querySelector('.lights-countdown').innerHTML = '<div class="twelve columuns centered-text"><h3>The lights are on!</h3></div><div class="twelve columuns centered-text"><h3>The show starts at 5:30 PM and ends at 11 :00 PM. Everyday</h3></div>';
         document.querySelector('.lights-countdown .three').classList.add('hide');
     } else {
         document.querySelector('.lights-countdown .days').innerHTML = '<h3>' + days + '</h3> days ';
